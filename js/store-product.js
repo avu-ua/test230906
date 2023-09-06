@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const selectedProduct = catalogue.products[productIdentifier]
 
-    document.querySelector('.storeproduct__image').src = selectedProduct.images[0]
+    document.querySelector('.storeproduct__image').src = selectedProduct[images][0]
     document.querySelector('.storeproduct__image').alt = `Bottle of ${selectedProduct.name}`
     document.querySelector('.storeproduct__thumbnail').src = selectedProduct.images[0]
     document.querySelector('.storeproduct__thumbnail').alt = `Bottle of ${selectedProduct.name}`
